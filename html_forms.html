@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <style>
+        input[type="text"], 
+        input[type="email"], 
+        input[type="number"],
+        input[type="tel"], 
+        input[type="date"], 
+        select {
+        height: 25px;
+        padding: 5px;
+        border: 1px solid lightgray;
+        box-sizing: border-box;
+    }
+        fieldset, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+        }
+        body {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>HTML Forms</h1></center>
+    <table width="100%">
+        <tr>
+            <td width="25%"></td>
+            <td width="50%">
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" required><br><br>
+
+                <!-- Phone number -->
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone"><br><br>
+
+                <!-- Date of birth -->
+
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                <!-- Country select -->
+
+                    <label for="country">Country:</label><br>
+                    <select id="country" name="country" required>
+                        <option value="al">Albania</option>
+                        <option value="ad">Andorra</option>
+                        <option value="am">Armenia</option>
+                        <option value="at">Austria</option>
+                        <option value="az">Azerbaijan</option>
+                        <option value="by">Belarus</option>
+                        <option value="be">Belgium</option>
+                        <option value="ba">Bosnia and Herzegovina</option>
+                        <option value="bg">Bulgaria</option>
+                        <option value="hr">Croatia</option>
+                        <option value="cy">Cyprus</option>
+                        <option value="cz">Czech Republic</option>
+                        <option value="dk">Denmark</option>
+                        <option value="ee">Estonia</option>
+                        <option value="fi">Finland</option>
+                        <option value="fr">France</option>
+                        <option value="ge">Georgia</option>
+                        <option value="de">Germany</option>
+                        <option value="gr">Greece</option>
+                        <option value="hu">Hungary</option>
+                        <option value="is">Iceland</option>
+                        <option value="ie">Ireland</option>
+                        <option value="it">Italy</option>
+                        <option value="xk">Kosovo</option>
+                        <option value="lv">Latvia</option>
+                        <option value="li">Liechtenstein</option>
+                        <option value="lt">Lithuania</option>
+                        <option value="lu">Luxembourg</option>
+                        <option value="mt">Malta</option>
+                        <option value="md">Moldova</option>
+                        <option value="mc">Monaco</option>
+                        <option value="me">Montenegro</option>
+                        <option value="nl">Netherlands</option>
+                        <option value="mk">North Macedonia</option>
+                        <option value="no">Norway</option>
+                        <option value="pl">Poland</option>
+                        <option value="pt">Portugal</option>
+                        <option value="ro">Romania</option>
+                        <option value="ru">Russia</option>
+                        <option value="sm">San Marino</option>
+                        <option value="rs">Serbia</option>
+                        <option value="sk">Slovakia</option>
+                        <option value="si">Slovenia</option>
+                        <option value="es">Spain</option>
+                        <option value="se">Sweden</option>
+                        <option value="ch">Switzerland</option>
+                        <option value="tr">Turkey</option>
+                        <option value="ua">Ukraine</option>
+                        <option value="gb">United Kingdom</option>
+                        <option value="va">Vatican City</option>
+                    </select><br><br>
+
+                <!-- Gender -->
+
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                    </fieldset><br>
+
+                <!-- Hobbies -->
+
+                    <fieldset>
+                        <legend>Hobbies</legend>
+                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <label for="reading">Reading</label><br>
+                    
+                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                        <label for="sports">Sports</label><br>
+                    
+                        <input type="checkbox" id="music" name="hobbies" value="music">
+                        <label for="music">Music</label><br>
+                    
+                        <input type="checkbox" id="travel" name="hobbies" value="travel">
+                        <label for="travel">Travel</label><br>
+                    
+                        <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+                        <label for="cooking">Cooking</label><br>
+                    
+                        <input type="checkbox" id="photography" name="hobbies" value="photography">
+                        <label for="photography">Photography</label><br>
+                    
+                        <input type="checkbox" id="painting" name="hobbies" value="painting">
+                        <label for="painting">Painting</label><br>
+                    
+                        <input type="checkbox" id="gardening" name="hobbies" value="gardening">
+                        <label for="gardening">Gardening</label><br>
+                    
+                        <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                        <label for="gaming">Gaming</label><br>
+                    
+                        <input type="checkbox" id="crafting" name="hobbies" value="crafting">
+                        <label for="crafting">Crafting</label><br>
+                    </fieldset><br>
+                    
+                <!-- Comments field -->
+
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" placeholder="Type your comments here" rows="5"></textarea><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </td>
+            <td width="25%"></td>
+        </tr>
+    </table>
+</body>
+</html>
